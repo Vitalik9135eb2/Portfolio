@@ -1,0 +1,176 @@
+@import './../../style/mixins.scss';
+@import './../../style/vars.scss';
+
+
+
+.contact{
+    @include flex(flex,column, flex-start,center);
+    min-height: 100vh;
+    background-color: $backgroundColorLight;
+    width: 100%;
+    .container{
+        @extend %container;
+        
+
+        .content{
+            width: 100%;
+            margin: 60px 0 0 0;
+            @include flex(flex,column,center,flex-start);
+            .formWrap{
+              width: 100%;
+              .form{
+                @include flex(flex,column,center,center);
+                width: 100%;
+                .inputsWrap{
+                  @include flex(flex,row,space-between,center);
+                  width: 650px;
+                  @media (max-width: 768px){
+                    width: 540px;
+                  }
+                  @media (max-width: 576px){
+                    @include flex(flex,column,space-between,center);
+                  }
+                  .inputInner{
+                    @include flex(flex,column,center,flex-start);
+                    position: relative;
+                    @media (max-width: 576px){
+                      margin-top: 30px;
+                      &:nth-child(1){
+                        margin-top: 0;
+                      }
+                    }
+                    
+                    .label{
+                      @include text(16px,600,16px,#fff);
+                      position: absolute;
+                      top:10px;
+                      left:15px;
+                      transition: .5s;
+                      .red{
+                        color: red;
+                        margin-left: 5px;
+                      }
+                    }
+                    .input{
+                      border: 3px solid $boredrColor;
+                      background-color: $backgroundColorLight;
+                      width: 300px;
+                      height: 40px;
+                      padding-left: 10px;
+                      @include text(16px,400,16px,#fff);
+                      @media (max-width: 768px){
+                        width: 260px;
+                      }
+                    }
+                  }
+                }
+
+                .textareaWrap{
+                  @include flex(flex,column,center,center);
+                  margin-top: 60px;
+                  width: 650px;
+                  position: relative;
+                  @media (max-width: 768px){
+                    width: 540px;
+                  }
+                  @media (max-width: 576px){
+                    width: 295px;
+                  }
+                  .textarea{
+                    width: 100%;
+                    height: 170px;
+                    resize: none;
+                    border: 3px solid $boredrColor;
+                    background-color: $backgroundColorLight;
+                    @include text(16px,400,18px,#fff);
+                    padding: 10px;  
+                  }
+                  .label{
+                    @include text(16px,600,16px,#fff);
+                    align-self: start;
+                    position: absolute;
+                    top:10px;
+                    left:15px;
+                    transition: .5s;
+                    .red{
+                      color: red;
+                      margin-left: 5px;
+                    }
+                  }
+                }
+
+                .send{
+                  margin-top: 50px;
+                  width: 130px;
+                  height: 50px;
+                  border-radius: 5px;
+                  background-color: $backgroundColorLight;
+                  @include text(18px,400,18px,$acentColorLight);
+                  border: 3px solid $acentColorLight;
+                  cursor: pointer;
+                  transition: .4s;
+                  &:hover{
+                    border-color: darken($acentColorLight,15);
+                    color: darken($acentColorLight,15);
+                  }
+                }
+              }
+            }
+
+            .social{
+              margin-top: 20px;
+              @include flex(flex,row,space-between,center);
+              width: 100%;
+              @media (max-width: 576px){
+                flex-direction: column;
+                margin-top: 90px;
+              }
+              .item{
+                @include flex(flex,row,space-between,center);
+                width: 190px;
+                margin-top: 40px;
+                margin-left: 40px;
+                height: 70px;
+                &:nth-child(1){
+                  margin-left: 0;
+                }
+                @media (max-width: 768px){
+                  margin-left: 20px;
+                }
+                @media (max-width: 576px){
+                  margin: 20px 0 0 0;
+                }
+              }
+
+              .linkImg{
+                @media (max-width: 768px){
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+              .link{
+                @include text(16px,500,16px,$textColor);
+                @media (max-width: 768px){
+                  font-size: 14px;
+                }
+                @media (max-width: 576px){
+                  font-size: 16px;
+                }
+              }
+            }
+
+
+          
+        }
+    }
+}
+
+.input:focus ~ .label{
+  margin: -30px 0 0 -10px;
+}
+
+.textarea:focus ~ .label{
+  margin: -30px 0 0 -10px;
+}
+
+

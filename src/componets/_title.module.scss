@@ -1,0 +1,37 @@
+@import './../style/mixins.scss';
+@import './../style/vars.scss';
+
+
+.titleWrap{
+    width: 100%;
+    @include flex(flex,row,space-between,center);
+    padding: 40px 0 0 0;
+    position: relative;
+    border-bottom: 2px dashed #7a7676;
+    
+    // &::after{
+    //     content: "About Me";
+    //     position: absolute;
+    //     top: -22px;
+    //     left: 7px;
+    //     font-size: 32px;
+    //     font-weight: 800;
+    //     letter-spacing: 2.8px;
+    //     color: #7a7676;
+    //     z-index: 0;
+    //     opacity: .15;
+
+    // }
+    .title{
+        @include text (30px, 800,30px, #118bee);
+        margin: 0 0 15px 0;
+        position: relative;
+        z-index: 1;
+        
+    }
+    .icon{
+        font-size: 30px;
+        color: #118bee;
+    }
+
+}

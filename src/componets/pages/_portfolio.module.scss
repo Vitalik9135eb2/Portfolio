@@ -1,0 +1,205 @@
+@import './../../style/mixins.scss';
+@import './../../style/vars.scss';
+
+
+.portfolio{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #40495c;
+    @include flex(flex,column, flex-start,center);
+    .container{
+        @extend %container;
+
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(10, 100px);
+            grid-gap: 5px;
+            margin: 40px 0 0 0;
+            @media (max-width: 992px){
+                grid-template-rows: repeat(10, 90px);
+            }
+            @media (max-width: 768px){
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(15, 100px);
+                justify-items: center;
+            }
+            @media (max-width: 576px){
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(20, 100px);
+            }
+            .item{
+                width: 280px;
+                height: 300px;
+                border-radius: 10px;
+                background-color: #fff;
+                grid-area: 1/1/3/2;
+                margin: 10px;
+                position: relative;
+                overflow: hidden;
+                @media (max-width: 992px){
+                    width: 210px;
+                    height: 260px;
+                }
+                @media (max-width: 768px){
+                    width: 240px;
+                    height: 290px;
+                }
+                .info{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: none;
+                    .infoWrap{
+                        position: relative;
+                        width: 100%;
+                        height: 250px;
+                        align-self: start;
+                        .itemTitle{
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 20px;
+                            @include text (14px,800,14px,#fff);
+                            letter-spacing: 3px;
+                            transition: .4s;
+                        }
+                        .itemInfo{
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 20px;
+                            @include text (14px,600,14px,#fff);
+                            transition: .4s;
+                        
+                        }
+                        .icon{
+                            color: #fff;
+                            font-size: 22px;
+                            transition: .4s;
+                            position: absolute;
+                            bottom: 10%;
+                            right: 0;
+                        }
+                    
+                        &:hover .itemTitle{
+                            top: 30%;
+                        }
+                        &:hover .itemInfo{
+                            bottom: 40%;
+                        }
+                        &:hover .icon{
+                            right: 15%;
+                        }
+                    }
+
+                    
+                }
+                &:hover .info{
+                    background-color: #108df3a6;
+                    @include flex (flex,column,center,center);
+                    
+                }
+
+                &:nth-child(2){
+                    height: 200px;
+                    grid-area: 1/2/2/3;
+                    @media (max-width: 992px){
+                        height: 180px;
+                    }
+                    @media (max-width: 768px){
+                        height: 190px;
+                    }
+                    @media (max-width: 576px){
+                        grid-area: 12/1/14/2;
+                    }
+                }
+                &:nth-child(3){
+                    height: 300px;
+                    grid-area: 1/3/3/4;
+                    @media (max-width: 992px){
+                        height: 260px;
+                    }
+                    @media (max-width: 768px){
+                        grid-area: 8/1/11/2;
+                        height: 380px;
+                    }
+                }
+                &:nth-child(4){
+                    height: 400px;
+                    grid-area: 4/1/5/2;
+                    @media (max-width: 992px){
+                        height: 360px;
+                    }
+                    @media (max-width: 768px){
+                        height: 395px;
+                    }
+                }
+                &:nth-child(5){
+                    height: 200px;
+                    grid-area: 3/2/5/3;
+                    @media (max-width: 992px){
+                        height: 180px;
+                    }
+                    @media (max-width: 768px){
+                        height: 190px;
+                    }
+                    @media (max-width: 576px){
+                        grid-area: 14/1/16/2;
+                    }
+                }
+                &:nth-child(6){
+                    height: 200px;
+                    grid-area: 4/3/6/4;
+                    @media (max-width: 992px){
+                        height: 180px;
+                    }
+                    @media (max-width: 768px){
+                        grid-area: 8/2/10/3;
+                    }
+                    @media (max-width: 768px){
+                        height: 190px;
+                    }
+                    @media (max-width: 576px){
+                        grid-area: 16/1/18/2;
+                    }
+                }
+                &:nth-child(7){
+                    height: 300px;
+                    grid-area: 5/2/8/3;
+                    @media (max-width: 992px){
+                        height: 265px;
+                    }
+                    @media (max-width: 768px){
+                        height: 290px;
+                    }
+                    @media (max-width: 576px){
+                        grid-area: 18/1/20/2;
+                    }
+                }
+                &:nth-child(8){
+                    height: 200px;
+                    grid-area: 6/3/8/4;
+                    @media (max-width: 992px){
+                        height: 170px;
+                    }
+                    @media (max-width: 768px){
+                        grid-area: 10/2/12/3;
+                    }
+                    @media (max-width: 576px){
+                        grid-area: 20/1/22/2;
+                    }
+                }
+
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

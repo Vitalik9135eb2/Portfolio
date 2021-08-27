@@ -1,0 +1,37 @@
+
+
+$acentColor: #3040ce;
+$acentColorLight: #118bee;
+$boredrColor: #808080;
+$progresBarColor: #0ac7e9;
+// $primaryColor: #FFF;
+
+
+// $textColorLight: #969393;
+// $linkColor: #5286EC;
+
+
+
+
+$backgroundColor: #191d2b;
+$backgroundColorLight: #40495c;
+$textColor: #bebfc0;
+// $secondaryColor: #C7C7C7;
+// $btnAcentColor:#3040ce;
+// $backgroundColorFilter: #f1d3f1;
+
+
+%container{
+    margin: 90px auto;
+    width: 900px;
+    @media screen and (max-width: 992px) {
+        width: 700px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 520px;
+    }
+    @media screen and (max-width: 575px) {
+        width: 300px;
+    }
+        
+}

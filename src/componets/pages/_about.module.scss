@@ -1,0 +1,129 @@
+@import './../../style/mixins.scss';
+@import './../../style/vars.scss';
+
+
+
+.about{
+    @include flex(flex,column, flex-start,center);
+    min-height: 100vh;
+    background-color: $backgroundColorLight;
+    width: 100%;
+    .container{
+        @extend %container;
+        .content{
+            width: 100%;
+            margin: 90px 0 0 0;
+            @include flex(flex,row, flex-start, flex-start);
+            @media (max-width: 768px){
+                @include flex(flex,column,center,center);
+            }
+            @media (max-width: 576px){
+                align-items: flex-start;
+                margin: 60px 0 0 0;
+            }
+            .imgWrap{
+                width: 50%;
+                height: 400px;
+                background-color: #9b8b8b;
+                @media (max-width: 992px){
+                    height: 325px;
+                    width: 360px;
+                }
+                @media (max-width: 576px){
+                    height: 290px;
+                    width: 300px;
+                }
+            }
+            .personal{
+                width: 50%;
+                @include flex(flex,column,center,flex-start);
+                margin: 10px 0 0 20px;
+                @media (max-width: 992px){
+                    margin: 0 0 0 20px;
+                }
+                @media (max-width: 768px){
+                    margin: 55px 0 0 30px;
+                }
+                @media (max-width: 576px){
+                    width: 90%;
+                }
+                .personalTitle{
+                    @include text(30px,700,22px, #fff);
+                    @media (max-width: 992px){
+                        font-size: 25px;
+                    }
+                    @media (max-width: 576px){
+                        width: 250px;
+                    }
+                    .name{
+                        @include text(30px,600,22px,$acentColor);
+                        @media (max-width: 992px){
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .personalText{
+                    margin: 40px 0 0 0;
+                    @include text(18px,400,22px,$textColor);
+                    @media (max-width: 992px){
+                        margin: 20px 0 0 0;
+                        font-size: 16px;
+                    }
+                    @media (max-width: 576px){
+                        width: 250px;
+                    }
+                }
+
+                .info{
+                    margin: 40px 0 0 0;
+                    @media (max-width: 992px){
+                        margin: 20px 0 0 0;
+                    }
+                    .tableInfo{
+                        width: 320px;
+                        @media (max-width: 992px){
+                            width: 270px;
+                        }
+                        .string{
+                            .data{
+                                @include text(18px,800,22px,#fff);
+                                @media (max-width: 992px){
+                                    font-size: 16px;
+                                }
+                            }
+                            .myData{
+                                @include text(18px,400,22px,$textColor);
+                                @media (max-width: 992px){
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .link{
+                    display: block;
+                    margin: 30px 0 0 30px;
+                    padding: 15px 30px;
+                    @include text(20px,800,18px,$acentColorLight);
+                    border: 2px solid $acentColorLight;
+                    border-radius: 4px;
+                    transition: .5s;
+                    &:hover{
+                        border-color: darken($acentColorLight,15);
+                        color: darken($acentColorLight,15);
+                    }
+                    @media (max-width: 992px){
+                        font-size: 16px;
+                        padding: 10px 20px;
+                        margin: 15px 15px;
+                    }
+                    @media (max-width: 768px){
+                        margin: 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
