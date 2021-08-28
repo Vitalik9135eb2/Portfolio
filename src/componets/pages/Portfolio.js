@@ -7,6 +7,9 @@ import fly from './../../assets/fly.jpg';
 import wp from './../../assets/wp.jpg';
 import sm from './../../assets/sm.png';
 import th from './../../assets/th.png';
+import shop from './../../assets/shop.png'
+
+
 function  Portfolio () {
     const data = {
         title: "Portfolio.",
@@ -52,6 +55,14 @@ function  Portfolio () {
                     </div>
 
                     <div className={s.item}>
+                        <img className={s.img} src={shop}/>
+                            <a className={s.info} target="_blank" href="https://vitalik9135eb2.github.io/React-shop/">
+                                <div className={s.infoWrap}>
+                                    <span className={s.itemTitle}>Shop</span>
+                                    <span className={s.itemInfo}>React project shop</span>
+                                    <span className={s.icon}><RiImage2Line.RiImage2Line/></span>
+                                </div>
+                            </a>
                     </div>
 
                     <div className={s.item}>
