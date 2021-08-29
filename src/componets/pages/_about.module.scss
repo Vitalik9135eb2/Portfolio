@@ -57,6 +57,7 @@
                     }
                     .name{
                         @include text(30px,600,22px,$acentColor);
+                        display: inline-block;
                         @media (max-width: 992px){
                             font-size: 25px;
                         }

@@ -50,7 +50,7 @@ function Contact () {
                     <div className={s.social} >
                         <div className={s.item}>
                             <img className={s.linkImg} src={tel}/>
-                            <a className={s.link} type="tel:375333069140">+375-33-306-91-40</a>
+                            <a className={s.link} href="tel:+375333069140">+375-33-306-91-40</a>
                         </div>
 
                         <div className={s.item}>
@@ -60,7 +60,7 @@ function Contact () {
 
                         <div className={s.item}>
                             <img className={s.linkImg} src={tg}/>
-                            <a className={s.link} href="#">@VitaliiPalcheyski</a>
+                            <a className={s.link} href="https://t.me/VitaliiPalcheyski">@VitaliiPalcheyski</a>
                         </div>
                     </div>
                     

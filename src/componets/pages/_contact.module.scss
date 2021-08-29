@@ -29,6 +29,7 @@
                   }
                   @media (max-width: 576px){
                     @include flex(flex,column,space-between,center);
+                    width: 340px;
                   }
                   .inputInner{
                     @include flex(flex,column,center,flex-start);
@@ -150,6 +151,7 @@
               }
               .link{
                 @include text(16px,500,16px,$textColor);
+                display: block;
                 @media (max-width: 768px){
                   font-size: 14px;
                 }
