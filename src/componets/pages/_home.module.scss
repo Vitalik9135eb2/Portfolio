@@ -173,10 +173,10 @@
   
   @keyframes scroll {
       0%{
-        transform: rotate3d(0%);
+        transform: rotate(0%);
       }
      100%{
       background-position:0px -3000px;
-      transform: rotate3d(300%);
+      transform: rotate(300%);
     }
   }
