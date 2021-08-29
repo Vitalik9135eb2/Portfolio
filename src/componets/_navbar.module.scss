@@ -176,15 +176,18 @@
         border-radius: 50%;
         background-color: #fff;
         border: 7px solid $acentColor;
+        background-image: url('./../assets/photo.jpg');
+        background-size: 101%;
+        background-repeat: no-repeat;
         @media (max-width: 360px){
             width: 180px;
             height: 180px;
             margin: 30px 0 0 35px;
         }
-        .photoMy{
-            width: 100%;
-            border-radius: 50%;
-        }
+        // .photoMy{
+        //     width: 100%;
+        //     border-radius: 50%;
+        // }
     }
 }
 
