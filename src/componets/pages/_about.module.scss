@@ -53,7 +53,7 @@
                         font-size: 25px;
                     }
                     @media (max-width: 576px){
-                        width: 250px;
+                        width: 290px;
                     }
                     .name{
                         @include text(30px,600,22px,$acentColor);

@@ -31,6 +31,7 @@ function App() {
 
           <animated.div key={key} style={props}> */}
               <Switch  >
+
                 <Route  path="/home" component={Home}/>
                 <Route path="/about" component={About}/>
                 <Route path="/portfolios" component={Portfolio}/>
