@@ -33,7 +33,7 @@
       font-size: 20px;
     }
     @media (max-width: 576px){
-      font-size: 15px;
+      font-size: 18px;
     }
     &__container {
       font-weight: 600;
@@ -46,30 +46,23 @@
   
       &:before {
         content: '[';
-        left: 0px;
-        // @media (max-width: 576px){
-        //   left: 20px;
-        // }
+        left: 0;
       }
   
       &:after {
         content: ']';
-        position: absolute;
         right: 0;
-        // @media (max-width: 576px){
-        //   right: 20px;
-        // }
       }
   
       &:after, &:before {
         position: absolute;
         top: 0;
-        
         color: #20e4bd;
         font-size: 42px;
         line-height: 40px;
         @media (max-width: 576px){
-          font-size: 33px;
+          font-size: 39px;
+          top: -3px;
         }
       
         animation-name: opacity;
@@ -101,7 +94,7 @@
           padding-left: 300px;
         }
         @media (max-width: 576px){
-          padding-left: 220px;
+          padding-left: 270px;
         }
         &__item {
           line-height:40px;
