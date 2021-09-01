@@ -5,6 +5,7 @@ import s from './_contact.module.scss';
 import tel from './../../assets/tel.png';
 import mail from './../../assets/mail.png';
 import tg from './../../assets/tg.png';
+import gh from './../../assets/github.png'
 
 
 function Contact () {
@@ -48,20 +49,26 @@ function Contact () {
 
 
                     <div className={s.social} >
-                        <div className={s.item}>
-                            <img className={s.linkImg} src={tel}/>
-                            <a className={s.link} href="tel:+375333069140">+375-33-306-91-40</a>
-                        </div>
+                            <a className={s.link} href="tel:+375333069140">
+                                <img className={s.linkImg} src={tel}/>
+                                <span>+375-33-306-91-40</span>
+                            </a>
 
-                        <div className={s.item}>
-                            <img className={s.linkImg} src={mail}/>
-                            <a className={s.link} href="#">05vp94@mail.ru</a>
-                        </div>
+                            <a className={s.link} href="https://github.com/Vitalik9135eb2">
+                                <img className={s.linkImg} src={gh}/>
+                                <span>My GitHub</span>
+                            </a>
 
-                        <div className={s.item}>
-                            <img className={s.linkImg} src={tg}/>
-                            <a className={s.link} href="https://t.me/VitaliiPalcheyski">@VitaliiPalcheyski</a>
-                        </div>
+                            <a className={s.link} href="#">
+                                <img className={s.linkImg} src={mail}/>
+                                <span>05vp94@mail.ru</span>
+                            </a>
+
+                            <a className={s.link} href="https://t.me/VitaliiPalcheyski">
+                                <img className={s.linkImg} src={tg}/>
+                                <span>@VitaliiPalcheyski</span>
+                            </a>
+
                     </div>
                     
 

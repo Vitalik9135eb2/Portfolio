@@ -15,7 +15,7 @@
         .content{
             width: 100%;
             margin: 60px 0 0 0;
-            @include flex(flex,column,center,flex-start);
+            @include flex(flex,column,center,center);
             .formWrap{
               width: 100%;
               .form{
@@ -119,28 +119,16 @@
             }
 
             .social{
-              margin-top: 20px;
+              margin-top: 100px;
               @include flex(flex,row,space-between,center);
               width: 100%;
-              @media (max-width: 576px){
-                flex-direction: column;
-                margin-top: 90px;
+              @media (max-width: 992px){
+                flex-wrap: wrap;
+                margin-top: 80px;
+                width: 520px;
               }
-              .item{
-                @include flex(flex,row,space-between,center);
-                width: 190px;
-                margin-top: 40px;
-                margin-left: 40px;
-                height: 70px;
-                &:nth-child(1){
-                  margin-left: 0;
-                }
-                @media (max-width: 768px){
-                  margin-left: 20px;
-                }
-                @media (max-width: 576px){
-                  margin: 20px 0 0 0;
-                }
+              @media (max-width: 576px){
+                width: 100%;
               }
 
               .linkImg{
@@ -150,13 +138,22 @@
                 }
               }
               .link{
+                @include flex(flex,row,flex-start,center);
+                width: 195px;
                 @include text(16px,500,16px,$textColor);
-                display: block;
-                @media (max-width: 768px){
-                  font-size: 14px;
+                @media (max-width: 992px){
+                  margin-top: 20px;
                 }
+                
                 @media (max-width: 576px){
-                  font-size: 16px;
+                  width: 40px;
+                }
+
+                span{
+                  margin-left: 15px;
+                  @media (max-width: 576px){
+                    display: none;
+                  }
                 }
               }
             }
