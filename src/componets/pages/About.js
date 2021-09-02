@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../Title';
 import * as FiUser from "react-icons/fi";
 import s from './_about.module.scss';
-import photo from './../../assets/about1.jpg';
+import photo from './../../assets/about3.jpg';
 
 
 function About() {
