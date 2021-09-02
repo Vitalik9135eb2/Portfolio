@@ -24,7 +24,7 @@
             .imgWrap{
                 width: 50%;
                 height: 400px;
-                background-color: #9b8b8b;
+                border: 5px solid $acentColorLight;
                 @media (max-width: 992px){
                     height: 325px;
                     width: 360px;
@@ -32,6 +32,11 @@
                 @media (max-width: 576px){
                     height: 290px;
                     width: 300px;
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
                 }
             }
             .personal{

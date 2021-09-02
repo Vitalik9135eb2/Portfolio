@@ -59,7 +59,7 @@ function Contact () {
                                 <span>My GitHub</span>
                             </a>
 
-                            <a className={s.link} href="#">
+                            <a className={s.link} href="mailto:05vp94@mail.ru">
                                 <img className={s.linkImg} src={mail}/>
                                 <span>05vp94@mail.ru</span>
                             </a>

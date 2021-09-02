@@ -1,7 +1,8 @@
 import React from 'react';
 import Title from '../Title';
 import * as FiUser from "react-icons/fi";
-import s from './_about.module.scss'
+import s from './_about.module.scss';
+import photo from './../../assets/about1.jpg';
 
 
 function About() {
@@ -16,7 +17,7 @@ function About() {
 
                 <div className={s.content}>
                     <div className={s.imgWrap} >
-
+                        <img src={photo}/>
                     </div>
                     <div className={s.personal} >
                         <h4 className={s.personalTitle}> I am <span className={s.name}>Vitalii Palcheuski</span></h4>
