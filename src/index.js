@@ -8,8 +8,9 @@ import Home from './componets/pages/Home';
 import { BiHome } from 'react-icons/bi';
 
 ReactDOM.render(
-  <Router>
-    <App />
+    <Router>
+      <App />
+    <Route exact path="/"/>
 
 
   </Router>,
