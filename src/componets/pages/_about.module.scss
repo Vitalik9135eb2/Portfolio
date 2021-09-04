@@ -42,15 +42,17 @@
             .personal{
                 width: 50%;
                 @include flex(flex,column,center,flex-start);
-                margin: 25px 0 0 20px;
+                margin: 10px 0 0 20px;
                 @media (max-width: 992px){
                     margin: 0 0 0 20px;
                 }
                 @media (max-width: 768px){
-                    margin: 55px 0 0 30px;
+                    margin: 55px 0 0 0px;
+                    align-self: flex-start;
+                    width: 100%;
                 }
                 @media (max-width: 576px){
-                    width: 90%;
+                    width: 100%;
                 }
                 .personalTitle{
                     @include text(30px,700,22px, #fff);
@@ -69,20 +71,20 @@
                     }
                 }
                 .personalText{
-                    margin: 40px 0 0 0;
+                    margin: 25px 0 0 0;
                     font-family: 'Nunito';
-                    @include text(18px,400,22px,$textColor);
+                    @include text(16px,400,24px,$textColor);
                     @media (max-width: 992px){
                         margin: 20px 0 0 0;
                         font-size: 16px;
                     }
                     @media (max-width: 576px){
-                        width: 250px;
+                        width: 290px;
                     }
                 }
 
                 .info{
-                    margin: 40px 0 0 0;
+                    margin: 20px 0 0 0;
                     @media (max-width: 992px){
                         margin: 20px 0 0 0;
                     }
@@ -126,7 +128,7 @@
                         margin: 15px 15px;
                     }
                     @media (max-width: 768px){
-                        margin: 30px 30px;
+                        margin: 30px 0 0 0;
                     }
                 }
             }

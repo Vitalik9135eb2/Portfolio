@@ -13,7 +13,7 @@ function About() {
     return (
         <div className={s.about}>
             <div className={s.container}>
-               <Title title={data.title} icon={data.icon}/>
+                <Title title={data.title} icon={data.icon}/>
 
                 <div className={s.content}>
                     <div className={s.imgWrap} >
@@ -21,7 +21,14 @@ function About() {
                     </div>
                     <div className={s.personal} >
                         <h4 className={s.personalTitle}> I am <span className={s.name}>Vitalii Palcheuski</span></h4>
-                        <p className={s.personalText}>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more  more interactive with web animations.</p>
+                        <p className={s.personalText}>
+                            Welcome to my portfolio site. 
+                            I am engaged in HTML-layout of sites. I have a completely cross-browser, responsive and valid layout. 
+                            To ensure that the site layout requirements are met while working on a project, 
+                            I use the Gulp project builder to automate the layout process, Less / Sass preprocessors,
+                            Pixel Perfect for layout that matches the provided pixel-for-pixel layout, 
+                            BEM and media queries for responsive site layout
+                        </p>
                         
                         <div className={s.info}>
                             <table className={s.tableInfo}>
@@ -50,16 +57,10 @@ function About() {
                                     <td className={s.myData}>Available</td>
                                 </tr>
                             </table>
-                            {/* <span className={s.span}> Full name:<strong>Vitali Palcheuki</strong></span>
-                            <span className={s.span}>Age:<strong>27</strong></span>
-                            <span className={s.span}>Nationality:<strong>Belarusian</strong></span>
-                            <span className={s.span}>Language:<strong>Russian, Inglish(B1)</strong></span>
-                            <span className={s.span}>Address:<strong>city Minsk</strong></span>
-                            <span className={s.span}>Freelance:<strong>Available</strong></span> */}
                         </div>
                         
 
-                        <a className={s.link} href="#" >Download CV</a>
+                        <a className={s.link} target="_blank" href="https://disk.yandex.by/i/oRQL7OaTtiuygw" >Download CV</a>
                     </div>
 
                 </div>
