@@ -3,6 +3,8 @@ import Title from '../Title'
 import s from './_portfolio.module.scss'
 import * as RiCalendarEvent from "react-icons/ri";
 import * as RiImage2Line from "react-icons/ri";
+
+import  {useState} from 'react';
 import fly from './../../assets/fly.jpg';
 import wp from './../../assets/wp.jpg';
 import sm from './../../assets/sm.png';
@@ -12,6 +14,9 @@ import melody from './../../assets/melody.png'
 
 
 function  Portfolio () {
+    const [isActive, setActive] = useState(false);
+    const toggleClass = () => {setActive(!isActive);}
+
     const data = {
         title: "Portfolio.",
         icon: <RiCalendarEvent.RiCalendarEventLine/>
@@ -21,7 +26,7 @@ function  Portfolio () {
             <div className={s.container}>
                 <Title title={data.title} icon={data.icon}/>
                 
-                <div className={s.content}>
+                <div className={ isActive ? s.contentActive : s.content }>
 
                     <div className={s.item}>
                         <img className={s.img} src={sm}/>
@@ -115,6 +120,11 @@ function  Portfolio () {
 
                 </div>
 
+
+                <button onClick={ toggleClass} className={isActive ? s.openActive : s.open}>
+                    <span className={s.all}>All project</span>
+                    <span className={s.roll}>Roll up</span>
+                </button>
             </div>
         </div>
     )
