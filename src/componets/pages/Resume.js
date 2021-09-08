@@ -44,23 +44,9 @@ function Resume() {
                             </div>
 
                             <div className={s.wrap}>
-                                <span className={s.itemTitle}>ReactJs<span className={s.subTitle}>10%</span></span>
+                                <span className={s.itemTitle}>React Js<span className={s.subTitle}>10%</span></span>
                                 <div className={s.progresBar}>
                                     <div className={`${s.fillReact} ${s.fill}`}></div>
-                                </div>
-                            </div>
-
-                            <div className={s.wrap}>
-                                <span className={s.itemTitle}>Photoshop<span className={s.subTitle}>40%</span></span>
-                                <div className={s.progresBar}>
-                                    <div className={`${s.fillPh} ${s.fill}`}></div>
-                                </div>
-                            </div>
-
-                            <div className={s.wrap}>
-                                <span className={s.itemTitle}>WordPress<span className={s.subTitle}>45%</span></span>
-                                <div className={s.progresBar}>
-                                    <div className={`${s.fillWp} ${s.fill}`}></div>
                                 </div>
                             </div>
 
@@ -73,26 +59,41 @@ function Resume() {
 
                             <div className={s.educationItem}>
 
-                                <span className={s.date}>2011 - 2016</span>
+                                <span className={s.date}>2011 - ...</span>
 
-                                <p className={s.text}>Lorem ipsum dolor sit amet consectetur, 
-                                    adipisicing elit. Quas, magni mollitia, 
-                                    aspernatur consequatur accusamus vero eum facere exercitationem velit 
-                                    suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
+                                <p className={s.text}>
+                                    Graduated from Polotsk State University in the field of law.
+                                    After graduation, I work in my specialty.
                                 </p>
                             
                             </div>
                             
                             <div className={s.educationItem}>
-
-                                <span className={s.date}>February - Jule 2021</span>
-
-                                <p className={s.text}>Lorem ipsum dolor sit amet consectetur, 
-                                    adipisicing elit. Quas, magni mollitia, 
-                                    aspernatur consequatur accusamus vero eum facere exercitationem velit 
-                                    suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.
+                                <span className={s.date}>Jule 2020 - February 2021</span>
+                                <p className={s.text}>
+                                    I started to study frontend development on my own. Made simple one-page sites without using JS, 
+                                    animations and preprocessors.
                                 </p>
-                            
+                            </div>
+
+                            <div className={s.educationItem}>
+                                <span className={s.date}>February - June 2021 </span>
+                                <p className={s.text}>
+                                    Сontinued studying frontend development at the online school "IT-INCUBATOR".For 5 months of training, 
+                                    I deepened my knowledge in html and css.
+                                    I learned how to do cross-browser valid layouts, and also studied SASS / LESS preprocessors,
+                                    the Gulp project builder, native JS and worked in a team with front-end developers on a project 
+                                    in React JS.
+                                </p>
+                            </div>
+
+                            <div className={s.educationItem}>
+                                <span className={s.date}>June 2021 - ...</span>
+                                <p className={s.text}>
+                                    After training, I consolidated my knowledge in site layout,
+                                    I independently mastered the JQ library and went deep into the study of React and Vue JS.<br/>
+                                    I improve my knowledge of English through online courses.
+                                </p>
                             </div>
 
                         </div>

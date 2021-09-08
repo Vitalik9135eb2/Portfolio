@@ -34,7 +34,7 @@ function About() {
                             <table className={s.tableInfo}>
                                 <tr className={s.string}>
                                     <td className={s.data}>Full name:</td>
-                                    <td className={s.myData}>Vitali Palcheuki</td>
+                                    <td className={s.myData}>Vitalii Palcheuski</td>
                                 </tr>
                                 <tr className={s.string}>
                                     <td className={s.data}>Age:</td>
@@ -60,7 +60,7 @@ function About() {
                         </div>
                         
 
-                        <a className={s.link} target="_blank" href="https://disk.yandex.by/i/oRQL7OaTtiuygw" >Download CV</a>
+                        <a className={s.link} target="_blank" href="https://disk.yandex.by/i/4IBrTKq9XcXxcg" >Download CV</a>
                     </div>
 
                 </div>
