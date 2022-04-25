@@ -37,14 +37,14 @@ function Resume() {
                             </div>
 
                             <div className={s.wrap}>
-                                <span className={s.itemTitle}>JavaScript<span className={s.subTitle}>30%</span></span>
+                                <span className={s.itemTitle}>JavaScript<span className={s.subTitle}>50%</span></span>
                                 <div className={s.progresBar}>
                                     <div className={`${s.fillJs} ${s.fill}`}></div>
                                 </div>
                             </div>
 
                             <div className={s.wrap}>
-                                <span className={s.itemTitle}>React Js<span className={s.subTitle}>10%</span></span>
+                                <span className={s.itemTitle}>React Js<span className={s.subTitle}>30%</span></span>
                                 <div className={s.progresBar}>
                                     <div className={`${s.fillReact} ${s.fill}`}></div>
                                 </div>
@@ -88,11 +88,20 @@ function Resume() {
                             </div>
 
                             <div className={s.educationItem}>
-                                <span className={s.date}>June 2021 - ...</span>
+                                <span className={s.date}>June - November 2021</span>
                                 <p className={s.text}>
                                     After training, I consolidated my knowledge in site layout,
                                     I independently mastered the JQ library and went deep into the study of React and Vue JS.<br/>
                                     I improve my knowledge of English through online courses.
+                                </p>
+                            </div>
+
+                            <div className={s.educationItem}>
+                                <span className={s.date}>November 2021 - ...</span>
+                                <p className={s.text}>
+                                    I work for Gamenet a.s..
+                                    I am engaged in HTML-layout of programm interfise and writing simple scripts in native js.
+                                    Sometimes I take freelance layout orders.
                                 </p>
                             </div>
 

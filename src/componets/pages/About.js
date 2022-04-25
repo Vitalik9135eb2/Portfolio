@@ -60,7 +60,7 @@ function About() {
                         </div>
                         
 
-                        <a className={s.link} target="_blank" href="https://disk.yandex.by/i/4IBrTKq9XcXxcg" >Download CV</a>
+                        <a className={s.link} target="_blank" href="https://disk.yandex.com/i/4_M4ghFAdO_PaQ" >Download CV</a>
                     </div>
 
                 </div>
